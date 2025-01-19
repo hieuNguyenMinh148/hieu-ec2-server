@@ -12,7 +12,7 @@ public class DemoController {
 
     @GetMapping
     public ResultData<String> ping() {
-        return ResultUtil.success("pong");
+        return ResultUtil.success("pong pong");
     }
 
 }
