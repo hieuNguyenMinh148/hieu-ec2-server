@@ -1,2 +1,26 @@
 server:
   port: 5000
+  address: 0.0.0.0
+spring:
+  profiles:
+    active: stage
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  flyway:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
+springdoc:
+  api-docs:
+    path: "/api-docs"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health, beans"
+      base-path: "/monitor"
+

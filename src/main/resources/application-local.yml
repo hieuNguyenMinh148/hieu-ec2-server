@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/crawler
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      max-file-size: 1000MB    # Giới hạn kích thước tối đa của một file
+      max-request-size: 2000MB # Giới hạn kích thước tối đa của toàn bộ request
+      enabled: true
+
